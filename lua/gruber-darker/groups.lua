@@ -154,6 +154,12 @@ M.setup = function()
 		markdownH5 = { fg = colors.red_1 },
 		markdownBlockquote = { fg = colors.brown },
 		markdownUrl = { fg = colors.niagara, underline = config.underline },
+		["@markup.strong"] = { bold = true },
+		["@markup.emphasis"] = { italic = true },
+		["@markup.strikethrough"] = { strikethrough = true },
+		["@markup.underline"] = { underline = true },
+		["@markup.heading"] = { fg = colors.red1 },
+		["@markup.link.url"] = { link = "markdownUrl" },
 
 		-- telescope.nvim
 		-- TelescopeNormal = { },
