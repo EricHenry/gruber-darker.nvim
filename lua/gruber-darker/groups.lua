@@ -152,14 +152,24 @@ M.setup = function()
 		markdownH3 = { fg = colors.red_1 },
 		markdownH4 = { fg = colors.red_1 },
 		markdownH5 = { fg = colors.red_1 },
+		markdownH6 = { fg = colors.red_1 },
 		markdownBlockquote = { fg = colors.brown },
 		markdownUrl = { fg = colors.niagara, underline = config.underline },
-		["@markup.strong"] = { bold = true },
+		["@markup.heading.1.markdown"] = { link = "markdownH1" },
+		["@markup.heading.2.markdown"] = { link = "markdownH2" },
+		["@markup.heading.3.markdown"] = { link = "markdownH3" },
+		["@markup.heading.4.markdown"] = { link = "markdownH4" },
+		["@markup.heading.5.markdown"] = { link = "markdownH5" },
+		["@markup.heading.6.markdown"] = { link = "markdownH6" },
+
+		-- markup
+		["@markup.strong"] = { bold = config.bold },
 		["@markup.emphasis"] = { italic = true },
 		["@markup.strikethrough"] = { strikethrough = true },
 		["@markup.underline"] = { underline = true },
-		["@markup.heading"] = { fg = colors.red1 },
+		["@markup.heading"] = { fg = colors.red1, bold = config.bold },
 		["@markup.link.url"] = { link = "markdownUrl" },
+
 
 		-- telescope.nvim
 		-- TelescopeNormal = { },
